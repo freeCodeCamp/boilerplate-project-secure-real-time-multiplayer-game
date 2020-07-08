@@ -1,6 +1,6 @@
 **freeCodeCamp** - Information Security 5: Secure Real Time Multiplayer Game
 ------
-
+[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-project-secure-real-time-multiplayer-game)](https://repl.it/github/freeCodeCamp/boilerplate-project-secure-real-time-multiplayer-game)
 ### User stories:
 
 Develop a 2D real time multiplayer game using the HTML Canvas API and [Socket.io](https://socket.io/). The game can be as simple or complex as you like, as long as all the following user stories are implemented:
@@ -26,5 +26,5 @@ Develop a 2D real time multiplayer game using the HTML Canvas API and [Socket.io
 
 ### Testing and additional notes
 
-* To run the tests on Glitch, set `NODE_ENV` to `test` without quotes in the `.env` file.
-* To run the tests in the console, use the command `npm run test`. To open the Glitch console, first click "Tools" in the bottom left corner and then click "Full Page Console".
+* To run the tests on Repl.it, set NODE_ENV to test without quotes in the .env file.
+* To run the tests in the console, use the command npm run test. To open the Repl.it console, press Ctrl+Shift+P (Cmd if on a Mac) and type "open shell".
