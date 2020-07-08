@@ -1,6 +1,6 @@
 /*
 *       
-*       To run the tests on Glitch, set `NODE_ENV` to `test` 
+*       To run the tests on Repl.it, set `NODE_ENV` to `test` 
 *       without quotes in the `.env` file. 
 *       To run the tests in the console, open the terminal 
 *       with [Ctrl + `] (backtick) and run the command `npm run test`.
