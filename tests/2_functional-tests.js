@@ -47,11 +47,11 @@ suite('Functional Tests', () => {
         });
     });
 
-    test("The headers say that the site is powered by 'PHP 7.4.3'.", done => {
+    test("The headers don't explicitly say the site is powered by 'Express'.", done => {
       chai.request(server)
         .get('/')
         .end((err, res) => {
-          assert.deepStrictEqual(res.header['x-powered-by'], 'PHP 7.4.3');
+          assert.notEqual(res.header['x-powered-by'], 'Express');
           done();
         });
     });
