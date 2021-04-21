@@ -30,7 +30,8 @@ suite('Functional Tests', () => {
       chai.request(server)
         .get('/')
         .end((err, res) => {
-          assert.deepStrictEqual(res.header['x-xss-protection'], '1; mode=block');
+          const csp = res.header['content-security-policy'];
+          assert.isTrue(csp.includes("script-src 'self'"));
           done();
         });
     });
