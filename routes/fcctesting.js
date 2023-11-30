@@ -57,7 +57,25 @@ module.exports = function (app) {
         res.type('txt').send(data.toString());
       });
     });
-    
+
+  app.route('/_api/public/Collectible.mjs')
+    .get(function (req, res, next) {
+      console.log('requested');
+      fs.readFile(__dirname + '/public/Collectible.mjs', function (err, data) {
+        if (err) return next(err);
+        res.type('txt').send(data.toString());
+      });
+    });
+
+  app.route('/_api/public/Player.mjs')
+    .get(function (req, res, next) {
+      console.log('requested');
+      fs.readFile(__dirname + '/public/Player.mjs', function (err, data) {
+        if (err) return next(err);
+        res.type('txt').send(data.toString());
+      });
+    });
+
   var error;
   app.get('/_api/get-tests', cors(), function(req, res, next){
     console.log(error);
